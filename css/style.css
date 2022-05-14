@@ -1,0 +1,148 @@
+@import url(nullstyle.css);
+
+
+/* ======================= */
+/* Fonts                   */
+/* ======================= */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+
+
+/* ======================= */
+/* Sectione One            */
+/* ======================= */
+
+.sectionOne {
+	height: 1360px;
+	background: url("../img/1sectionOne/BackGround.png");
+	position: relative;
+}
+
+.sectionOneShadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.sectionOnePasteBook {
+	position: absolute;
+	top: 0;
+	right: -20px;
+}
+
+.header {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	color: #fff0e7;
+	border: 1px solid rgba(255, 255, 255, 0.376);
+}
+
+.container {
+	width: 100%;
+	max-width: 1780px;
+	margin: 0 auto;
+	padding: 0px 20px 0px 20px;
+}
+
+.header__main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__title {
+	padding: 10px 0px 0px 0px;
+	display: flex;
+}
+
+.header__title h1 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+	font-size: 30px;
+	padding: 0px 0px 0px 20px;
+}
+
+
+.header__nav {}
+
+.nav__menu {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 800;
+
+}
+
+.nav__menu a {
+	text-decoration: none;
+	color: #fff0e7;
+}
+
+.nav__link {
+	margin: 0px 0px 0px 30px;
+	letter-spacing: 1px;
+	padding: 10px 15px 10px 15px;
+	position: relative;
+
+}
+
+.nav__link::after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 0.4em;
+	width: 0%;
+	bottom: -.5em;
+	background-color: #fff;
+	transition: all ease-in-out 250ms;
+}
+
+.nav__link:hover::after {
+	width: 75%;
+}
+
+.nav__menu a:first-child .nav__link {
+	margin: 0px 0px 0px 0px;
+}
+
+.nav__menu a:last-child .nav__link {
+	border: 1px solid rgba(255, 255, 255, 0.518);
+	background-color: rgba(255, 255, 255, 0.192);
+	border-radius: 50px;
+	transition: all ease-in-out 350ms;
+}
+
+
+.nav__menu a:last-child .nav__link::after {
+	display: none;
+}
+
+.nav__menu a:last-child .nav__link:hover {
+	background-color: rgba(255, 255, 255, 0.513);
+	color: rgba(0, 0, 0, 0.459);
+}
+
+
+
+.contentIntro {
+}
+
+.introInfo {
+}
+.intor__citate {
+}
+.intro__title {
+}
+.intro__subtitle {
+}
+.intro__buttons {
+}
+.intro__social {
+}
