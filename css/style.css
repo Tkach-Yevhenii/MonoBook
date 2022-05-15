@@ -15,6 +15,10 @@ button {
 	background-color: transparent;
 }
 
+body {
+	background-color: #fff7f2;
+}
+
 /* ======================= */
 /* Sectione One            */
 /* ======================= */
@@ -357,6 +361,13 @@ button {
 .intro__social {
 	display: flex;
 	justify-content: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 5;
+}
+
+.intro__social a {
+	cursor: pointer;
 }
 
 .intro__social img {
@@ -366,6 +377,7 @@ button {
 	border-radius: 50px;
 	padding: 7px;
 	transition: all ease-in-out .2s;
+	cursor: pointer;
 }
 
 .intro__social img:hover {
@@ -442,6 +454,174 @@ button {
 	text-transform: uppercase;
 	letter-spacing: 1.2px;
 }
+
+
+
+/* ======================= */
+/* Sectione Two            */
+/* ======================= */
+
+
+.SectionTwo {
+	height: 1000px;
+	padding: 80px 0px 100px 0px;
+}
+
+.aboutUs__all__items {
+	display: flex;
+
+}
+
+
+.aboutUs__item {
+	width: 50%;
+	height: 100%;
+
+}
+
+.aboutUs__text {
+	font-family: 'Raleway', sans-serif;
+}
+
+.aboutUs__mainTitle h3 {
+	color: #c53842;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+}
+
+.aboutUs__title {
+	color: #212e37;
+	font-size: 30px;
+	line-height: 1.2;
+	letter-spacing: 1.2px;
+	font-weight: 800;
+	margin: 30px 0px 30px 0px;
+}
+
+.aboutUs__title::after {
+	content: '';
+	display: inline-block;
+	background: rgb(250, 250, 250);
+	background: linear-gradient(171deg, rgba(250, 250, 250, 0) 0%, rgba(172, 36, 44, 1) 100%);
+	width: 120px;
+	height: 2px;
+}
+
+.aboutUs__info p {
+	margin: 0px 0px 30px 0px;
+	letter-spacing: 1.2px;
+	line-height: 1.8;
+	color: #212e37;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.aboutUs__cards .aboutUs__rectangles:last-child {
+	justify-content: end;
+}
+
+.aboutUs__rectangles {
+	display: flex;
+	position: relative;
+	cursor: pointer;
+}
+
+.ractangle {
+	width: 45%;
+	height: 350px;
+	background-color: #FFF;
+	-webkit-box-shadow: 5px 5px 21px 5px rgba(0, 0, 0, 0.37);
+	box-shadow: 5px 5px 21px 5px rgba(0, 0, 0, 0.37);
+	border-radius: 40px;
+	overflow: hidden;
+	position: relative;
+
+
+}
+
+.rectangle__elips {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 100px;
+	height: 100px;
+	background: rgb(250, 209, 38);
+	background: linear-gradient(171deg, rgba(250, 209, 38, 0.8018557764902836) 0%, rgba(255, 84, 79, 0.7206232834930848) 100%);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-box-shadow: 5px 5px 19px 5px rgba(255, 148, 37, 0.46);
+	box-shadow: 5px 5px 19px 5px rgba(255, 148, 37, 0.46);
+}
+
+.rectangle__elips img {
+	height: 50px;
+
+}
+
+.rectangle__text {
+	font-family: 'Raleway', sans-serif;
+	color: #212e37;
+	position: absolute;
+	top: 150px;
+	left: 25px;
+	width: 240px;
+}
+
+.rectangle__title h2 {
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 0px 0px 20px 0px;
+}
+
+.rectangle__subtitle p {
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+
+}
+
+.reactangle__body {
+	width: 100%;
+	height: 100%;
+	background: rgb(250, 209, 38);
+	background: linear-gradient(171deg, rgba(250, 209, 38, 0.8018557764902836) 0%, rgba(255, 84, 79, 0.7206232834930848) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.back {
+	position: absolute;
+}
+
+.back,
+.front {
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+
+.front {
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.aboutUs__rectangles:hover .front {
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.aboutUs__rectangles:hover .back {
+	transform: perspective(600px) rotateY(0deg);
+}
+
+
 
 
 @media (max-width: 1130px) {
