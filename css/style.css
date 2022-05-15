@@ -68,10 +68,14 @@ body {
 	align-items: center;
 	color: #fff0e7;
 	border: 1px solid rgba(255, 255, 255, 0.376);
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	z-index: 50;
+}
+
+.header.fixed {
+	position: fixed;
 }
 
 .header::before {
@@ -1401,6 +1405,19 @@ body {
 
 	.sectionSix {
 		padding: 250px 0px 100px 0px;
+	}
+
+	.foot__icons {
+		font-size: 10px;
+		text-align: right;
+	}
+
+	.foot__contact {
+		text-align: right;
+	}
+
+	.foot__info {
+		width: 400px;
 	}
 
 }
