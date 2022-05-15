@@ -4,6 +4,8 @@ $(document).ready(function () {
 		$('body').toggleClass('.lock');
 	});
 
+	$('.Rew__all__slider').slick({
 
+	});
 });
 
